@@ -37,7 +37,7 @@ public class Staff extends JavaPlugin
   protected boolean random;
   protected boolean enabled;
 
-
+//hi there
   public void onEnable()
   {
     this.conf = getConfig();
