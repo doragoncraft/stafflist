@@ -1,0 +1,12 @@
+name: DoragoncraftStaffList
+main: me.carl230690.Staff.Staff
+version: 1.0
+website: http://www.doragoncraft.com/
+author: carl230690
+description: >
+                    Shows online STAFF
+commands:
+  who:
+    description: Shows online STAFF
+  list:
+    description: Shows online STAFF
