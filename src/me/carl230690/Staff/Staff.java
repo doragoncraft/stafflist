@@ -1,24 +1,16 @@
 package me.carl230690.Staff;
 
 import java.io.File;
-import java.util.logging.Logger;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
-import org.bukkit.Server;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.configuration.file.FileConfigurationOptions;
 import org.bukkit.entity.Player;
-import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerJoinEvent;
-import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.scheduler.BukkitScheduler;
 
-@SuppressWarnings("unused")
 public class Staff extends JavaPlugin
   implements Listener
 {
@@ -28,16 +20,8 @@ public class Staff extends JavaPlugin
   public String staffLine;
   public int maxPlayers;
   public String lastLine;
-  public int time;
-  public static Logger log;
-  public static String name = "";
-  public static long size = 0L;
-  public String a = "";
-  public int config_version = 1;
-  protected boolean random;
-  protected boolean enabled;
 
-//hi there
+
   public void onEnable()
   {
     this.conf = getConfig();
@@ -76,10 +60,8 @@ public class Staff extends JavaPlugin
         	  }
         	  }
         	  this.staffLine = ChatColor.RED+ "Staff Online"+ChatColor.DARK_GRAY+": "+ChatColor.RED + staff.toString();
-        	   
             sendList(player);
-            return true;
-        	  
+            return true;	  
           }
         } else if (!player.hasPermission("staffonline.who"))
           player.sendMessage(ChatColor.DARK_RED + "You do not have permission for this command");
@@ -140,24 +122,4 @@ public class Staff extends JavaPlugin
     p.sendMessage(this.staffLine);
     p.sendMessage(this.lastLine);
   }
-  
-  public boolean isAnnouncerEnabled() {
-      return enabled;
-  }
-  
-  public boolean isRandom() {
-      return random;
-  }
-  
-  public void announce() {
-      for (Player player : Bukkit.getOnlinePlayers()) {
-    	    player.sendMessage(this.headLine);
-    	    player.sendMessage(this.playersOnline);
-    	    player.sendMessage(this.staffLine);
-    	    player.sendMessage(this.lastLine);
-    	  
-      }
-  }
-
-
 }
