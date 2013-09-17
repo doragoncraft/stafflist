@@ -9,7 +9,7 @@
 config-version: 1
 
 # Configure this part
-headLine: '&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&4[&aDoragon&fStaff&4]&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-'
+headLine: '&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&4[&aDoragon&fStaff&4]&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&a-'
 lastLine: '&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-&a-&f-'
 staff: '&4Staff Online&8:&c %staff%'
 playersOnline: '&ePlayers Online&8:&r &5(&d%online%&8/&d%max_online%&5)'
